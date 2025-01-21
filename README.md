@@ -34,6 +34,20 @@ and **micros()** functions and therefore slower of course.
 
 As always, constructive feedback is welcome.
 
+### Boards
+
+Some boards already implement millis64 and/or micros64. 
+If so one could not use this library as is (but it is fairly easy to adapt)
+
+|  board    |  millis64  |  micros64  |
+|:----------|:----------:|:----------:|
+|  UNO      |     N      |     N      |
+|  ESP32    |     N      |     N      |
+|  ESP8266  |     N      |    YYY     |
+|  M4       |     N      |     N      |
+|  RPIpico  |     N      |     N      |
+
+
 
 ### Print
 

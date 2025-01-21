@@ -90,6 +90,14 @@ uint64_t micros64(uint32_t offset = 0)
 };
 
 
+//  PATCH for ESP8266 as it already supports micros64().
+//  call once per 30 minutes.
+//  uint64_t micros64(uint32_t offset)
+//  {
+//    micros64() + offset;
+//  }
+
+
 //  call once per 70 minutes - slower
 // uint64_t micros64(uint32_t offset = 0)
 // {
@@ -104,6 +112,8 @@ uint64_t micros64(uint32_t offset = 0)
   // if (offset == 0) return (now64 | now);
   // return (now64 | now) + offset;
 // }
+
+
 
 
 /////////////////////////////////////////////////////
