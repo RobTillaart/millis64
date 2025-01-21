@@ -24,7 +24,7 @@ void loop()
 {
   Serial.print(millis());
   Serial.print("\t");
-  Serial.print(print64(millis64(0)));  //  no offset
+  Serial.print(print64(millis64()));  //  no offset
   Serial.print("\t");
   Serial.print(millis32(0xFFFFF000));  //  big offset ~~ small negative offset
   Serial.print("\t");
